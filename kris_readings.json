@@ -1,0 +1,146 @@
+{
+  "member-123" : [
+    {
+    "account-abc" : [
+      {
+      "electricity": [
+        {
+          "cumulative": 18453,
+          "readingDate": "2017-07-31T00:00:00.000Z",
+          "unit": "kWh"
+        },
+        {
+          "cumulative": 18620,
+          "readingDate": "2017-08-31T00:00:00.000Z",
+          "unit": "kWh"
+        }
+        ]
+      }
+    ]
+  }
+  ],
+  "member-456": [
+    {
+      "account-abc": [
+        {
+          "electricity": [
+            {
+              "cumulative": 18453,
+              "readingDate": "2017-07-31T00:00:00.000Z",
+              "unit": "kWh"
+            },
+            {
+              "cumulative": 18620,
+              "readingDate": "2017-08-31T00:00:00.000Z",
+              "unit": "kWh"
+            }
+          ]
+        },
+        {
+          "gas": [
+            {
+              "cumulative": 2421,
+              "readingDate": "2017-07-31T00:00:00.000Z",
+              "unit": "m3"
+            },
+            {
+              "cumulative": 2467,
+              "readingDate": "2017-08-31T00:00:00.000Z",
+              "unit": "m3"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "member-234": [
+    {
+      "account-abc": [
+        {
+          "electricity": [
+            {
+              "cumulative": 29323,
+              "readingDate": "2017-07-31T00:00:00.000Z",
+              "unit": "kWh"
+            },
+            {
+              "cumulative": 29520,
+              "readingDate": "2017-08-31T00:00:00.000Z",
+              "unit": "kWh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account-asd": [
+        {
+          "electricity": [
+            {
+              "cumulative": 29053,
+              "readingDate": "2017-07-31T00:00:00.000Z",
+              "unit": "kWh"
+            },
+            {
+              "cumulative": 29220,
+              "readingDate": "2017-08-31T00:00:00.000Z",
+              "unit": "kWh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "member-321": [
+    {
+      "account-abc": [
+        {
+          "electricity": [
+            {
+              "cumulative": 32433,
+              "readingDate": "2017-07-31T00:00:00.000Z",
+              "unit": "kWh"
+            },
+            {
+              "cumulative": 32600,
+              "readingDate": "2017-08-31T00:00:00.000Z",
+              "unit": "kWh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "account-asd": [
+        {
+          "electricity": [
+            {
+              "cumulative": 42443,
+              "readingDate": "2017-07-31T00:00:00.000Z",
+              "unit": "kWh"
+            },
+            {
+              "cumulative": 42610,
+              "readingDate": "2017-08-31T00:00:00.000Z",
+              "unit": "kWh"
+            }
+          ]
+        },
+        {
+          "gas": [
+            {
+              "cumulative": 2203,
+              "readingDate": "2017-07-31T00:00:00.000Z",
+              "unit": "m3"
+            },
+            {
+              "cumulative": 2249,
+              "readingDate": "2017-08-31T00:00:00.000Z",
+              "unit": "m3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
