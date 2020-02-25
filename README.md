@@ -45,4 +45,8 @@ You can assume:
 
 - `gas2energy()` - converts gas m^3 to kW
 - `process_data()` - calculates the total £ amount and kWh for both electricity and gas for the calendar month by looping through energy sources
-- calculate_bill() - calculate bill for the provided account ID and member.
+- `calculate_bill()` - calculate bill for the provided account ID and member.
+
+## To do
+
+- python error handling
