@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- encoding: utf-8 -*-
-
 import json
 
 def get_readings(readings_file):

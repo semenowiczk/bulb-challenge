@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- encoding: utf-8 -*-
-
 """Constants for computing bulb bills."""
 
 BULB_TARIFF = {

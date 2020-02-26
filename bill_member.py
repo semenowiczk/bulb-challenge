@@ -1,6 +1,3 @@
-#!/usr/bin/env python3
-# -*- encoding: utf-8 -*-
-
 """
 A python script that given a set of meter readings,
 computes a member’s monthly energy bill.
