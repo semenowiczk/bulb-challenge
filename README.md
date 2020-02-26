@@ -47,6 +47,28 @@ You can assume:
 - `process_data()` - calculates the total £ amount and kWh for both electricity and gas for the calendar month by looping through energy sources
 - `calculate_bill()` - calculate bill for the provided account ID and member.
 
+## Requirements
+
+- Python3
+
+## How to use
+
+ ```bash
+  ./main.py --help - usful information about additional arguments
+  ./main.py - with out any arguments it will use by default `readings.json` as source of readings, MEMBER_ID='member-123', ACCOUNT_ID='ALL' and BILL_DATE='2017-08-31'
+  ./main.py --member_id member-234 --account_id account-asd --readings_file kris_readings.json - using `kris_readings.json` as source of readings
+  ```
+
+Example output:
+
+ ```bash
+  ./main.py --member_id member-234 --account_id account-asd --readings_file kris_readings.json
+  Hello member-234!
+  Your bill for account-asd on 2017-08-31 is £27.57
+  based on 167kWh of usage in the last month
+```
+
+
 ## To do
 
 - python error handling
