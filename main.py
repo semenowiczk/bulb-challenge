@@ -19,10 +19,12 @@ def parse_arguments():
                         or an individual account.')
     parser.add_argument('--bill_date', type=str, default='2017-08-31',
                         help='ISO standard formatted date for UTC timezone (e.g. 2017-08-31).')
+    parser.add_argument('--readings_file', type=str, default='./readings.json',
+                        help='JSON file path with readings')
     return parser.parse_args()
 
 
-def main(member_id=None, account_id=None, bill_date=None):
+def main(member_id=None, account_id=None, bill_date=None, readings_file=None):
     """Main entry point for bill calculation command line app.
 
     member_id :: the member identifier in our dataset.
@@ -36,11 +38,12 @@ def main(member_id=None, account_id=None, bill_date=None):
     Expects an iso standard date format as a string, e.g. '2017-11-01'
     Timezone is assumed to be GMT.
     """
-    calculate_and_print_bill(member_id, account_id, bill_date)
+    calculate_and_print_bill(member_id, account_id, bill_date, readings_file)
 
 
 if __name__ == '__main__':
     args = parse_arguments()
     main(member_id=args.member_id,
          account_id=args.account_id,
-         bill_date=args.bill_date)
+         bill_date=args.bill_date,
+         readings_file=args.readings_file)

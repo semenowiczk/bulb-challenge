@@ -59,12 +59,12 @@ def process_data(energy_sources, bill_month, bill_year):
                 print(f"Unsupported {source} energy source")
     return amount, total_estimated_kwh
 
-def calculate_bill(member_id=None, account_id=None, bill_date=None):
+def calculate_bill(member_id=None, account_id=None, bill_date=None, readings_file=None):
     """
     Calculate the bill for provided member_id, account argument, and billing date,
     it will compute the bill for the customer.
     """
-    readings = load_readings.get_readings()
+    readings = load_readings.get_readings(readings_file)
     data = readings.get(member_id)
     amount = 0
     kwh = 0
@@ -84,11 +84,11 @@ def calculate_bill(member_id=None, account_id=None, bill_date=None):
         amount, kwh = process_data(account[account_id], bill_date.month, bill_date.year)
     return round(amount, 2), int(kwh)
 
-def calculate_and_print_bill(member_id, account, bill_date):
+def calculate_and_print_bill(member_id, account, bill_date, readings_file):
     """Calculate the bill and then print it to screen.
     Account is an optional argument - I could bill for one account or many.
     There's no need to refactor this function."""
-    amount, kwh = calculate_bill(member_id, account, bill_date)
+    amount, kwh = calculate_bill(member_id, account, bill_date, readings_file)
     print('Hello {member}!'.format(member=member_id))
     print('Your bill for {account} on {date} is £{amount}'.format(
         account=account,
